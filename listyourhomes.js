@@ -49,18 +49,25 @@ window.addEventListener('click', function(event){
 // <!---------------------------------------------------------> */
 
 // Define UI [Price | Street | City | State]
+const formPlatform = document.getElementById('form-platform-control');
 const price = document.getElementById('price-input');
 const street = document.getElementById('street-input');
 const city = document.getElementById('city-input');
 const state = document.getElementById('state-input');
+const submitBtn = document.getElementById('submit-btn-homes');
+
 
 runAllEventListenersUsers();
 
 function runAllEventListenersUsers(){
-  price.addEventListener('keydown', priceListen);
-
-
+  formPlatform.addEventListener('submit', submitAction);
 };
 
-// Price-Input Function
-function priceListen()
+// Submit Btn Clicked Function
+function submitAction(e) {
+  console.log('Works');
+  // if(price.value !== '' && street.value !== '' && city.value !== '' && state.value !== ''){
+  //   console.log('Works');
+  // }
+  e.preventDefault();
+}
