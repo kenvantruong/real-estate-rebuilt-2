@@ -1,8 +1,8 @@
 const formSignIn = document.querySelector('.form-signin');
 
-
+// <----------------------------------------------->
 /* <!---------SIGN IN POP UP!----------------->
-<!-------------git test------> */
+<!-----------------------------------------------> */
 const signinBtn = document.querySelector('.clickable-btn-sign-in').addEventListener('click', function(e){
   let displayShow = document.querySelector('.displayShow');
   let signinWrapper = document.querySelector('.sign-wrapper');
