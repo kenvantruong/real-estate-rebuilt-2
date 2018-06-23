@@ -26,7 +26,7 @@ function listYourHomeBtnClick() {
 
 
 
-// ------remove--------
+// ------Remove It--------
 
 window.addEventListener('click', function(event){
   let displayShowHome = document.querySelector('.displayShow-home');
